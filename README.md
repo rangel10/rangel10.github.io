@@ -20,7 +20,7 @@ requirements: Node.js
 [MIT](https://github.com/rangel10/rangel10.github.io/blob/master/LICENSE)
 
 ### Screenshot
-[Screenshot]()
+[Screenshot](screen.png)
 
 ### Author
 [Ricardo Andres Angel Villadiego](https://github.com/rangel)
