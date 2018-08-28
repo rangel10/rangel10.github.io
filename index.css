@@ -1,5 +1,5 @@
 body {
-    margin: 40px auto;
+    margin: 2rem auto;
     font-size: 18px;
     background-color: #EEEEEF !important;
 }
@@ -87,6 +87,13 @@ h3 {
     left: 35%;
 }
 
+.img__description_layer h3 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    align-content: center;
+}
+
 .img__micro {
     width: 100%;
     height: 100%;
@@ -114,6 +121,20 @@ h3 {
 .img__wrap:hover .img__description_layer {
     visibility: visible;
     opacity: 1;
+}
+
+.interest-more:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.interest-more {
+    display: inline-block;
+}
+
+.interest-more img{
+    width: 150px;
+    height: :300px;
 }
 
 .img__description {
@@ -150,4 +171,21 @@ h3 {
 .contact-form {
     margin-left: auto;
     margin-right: auto;
+}
+
+.init {
+    margin-top: 3rem;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+number, mail {
+    display: inline-block;
+}
+
+img-skills {
+    margin: 2rem;
+    display: inline-block;
 }

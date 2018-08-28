@@ -7,35 +7,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="misc.js"></script>
     <script src="main.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <ul class="nav nav-pills nav-fill barra">
-            <li class="nav-item">
-                <a class="nav-link" href="#aboutme">About me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#interest">Interests</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#goals">Goals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#misc">Miscellaneous</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-        <div class="row">
+        <div class="row colmd-12">
+
+            <ul class="nav nav-pills nav-fill nav-justified fixed-top bg-dark barra">
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutme">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" anv-item nav-link" href="#interest">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skill">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#misc">Miscellaneous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row init">
             <h1 id="aboutme" class="title">About me</h1>
             <div class="col-md-12">
                 <div class="profile col-md-3">
@@ -46,7 +48,7 @@
                 </div>
                 <div class="col-md-8 description">
                     <p>
-                        Hello, I'm a undergraduate student at Universidad de los Andes, Currently I'm majoring in Systems and Computer Engineering and Microbiology. I'm 21 years old and live with my mother and sister in an apartment in Bogota, Colombia. My main interest are topics about science and technology. I'm passionate to learn new things and I'm very open to new ideas, especially those that challenge current paradigms. For me knowledge is one of the most important things a human being can have, so i take every chance i have to acquire it.
+                        Hello, I'm a undergraduate student at Universidad de los Andes, Currently I'm majoring in Systems and Computer Engineering and Microbiology. I'm 21 years old and live with my mother and sister in an apartment in Bogota, Colombia. My main interest are topics about science and technology. I'm passionate to learn new things and I'm very open to new ideas, especially those that challenge current paradigms. For me knowledge is one of the most important things a human being can have, so I take every chance i have to acquire it.
                     </p>
                 </div>
             </div>
@@ -83,7 +85,7 @@
                         <div class="img__description_layer">
                             <h1 class="display-6">Bioinformatics</h1>
                             <blockquote class="img__description col-md-6">
-                                Bioinformatics refers to the use of computer science, statistical modelling and algorithmic processing to understand biological data. Bioinformatics is an example of how computer science has revolutionized other fields.
+                                Bioinformatics refers to the use of computer science, statistical modelling and algorithmic processing to understand biological data. Bioinformatics is an example of how computer science has revolutionized other fields.<br><br> Simply put, bioinformatics applies modern computing and analytical techniques to biological information. Bioinformatics is used heavily in fields that require processing techniques for large data sets, such as sequencing a genome. Bioinformatics is also used in the pharmaceutical industry to identify molecular combinations that are more likely to yield useful drugs.
                             </blockquote>
                         </div>
                     </div>
@@ -94,12 +96,53 @@
                         <div class="img__description_layer">
                             <h1 class="display-6">Computational Biology</h1>
                             <blockquote class="img__description col-md-6">
-                                A branch of biology involving the application of computers and computer science to the understanding and modeling of the structures and processes of life. It entails the use of computational methods (e.g., algorithms) for the representation and simulation of biological systems, as well as for the interpretation of experimental data, often on a very large scale.
+                                A branch of biology involving the application of computers and computer science to the understanding and modeling of the structures and processes of life. It entails the use of computational methods (e.g., algorithms) for the representation and simulation of biological systems, as well as for the interpretation of experimental data, often on a very large scale.<br> Since the late 1990s, computational biology has become an important part of developing emerging technologies for the field of biology. The terms computational biology and evolutionary computation have a similar name, but are not to be confused. Unlike computational biology, evolutionary computation is not concerned with modeling and analyzing biological data. It instead creates algorithms based on the ideas of evolution across species. Sometimes referred to as genetic algorithms, the research of this field can be applied to computational biology. While evolutionary computation is not inherently a part of computational biology, Computational evolutionary biology is a subfield of it.
                             </blockquote>
                         </div>
                     </div>
                 </div>
-
+                <h3>Things I would like to learn more about: </h3>
+                <div class="interest-more col-md-2" id="algo">
+                    <img class="img__micro" src="img/algo.jpg" />
+                    <div class="img__description_layer">
+                        <h3 class="mod">Algorithms</h3>
+                    </div>
+                </div>
+                <div class="interest-more col-md-2" id="prog">
+                     <img class="img__micro" src="img/proglang.jpg" />
+                    <div class="img__description_layer">
+                        <h3 class="mod">Programming languages</h3>
+                    </div>
+                </div>
+                <div class="interest-more col-md-2" id="os">
+                     <img class="img__micro" src="img/os.png" />
+                    <div class="img__description_layer">
+                        <h3 class="mod">Operating Systems</h3>
+                    </div>
+                </div>
+                <div class="interest-more col-md-2" id="gnu">
+                     <img class="img__micro" src="img/linux.jpg" />
+                    <div class="img__description_layer">
+                        <h3 class="mod">GNU/Linux</h3>
+                    </div>
+                </div>
+                <div class="interest-more col-md-2" id="ai">
+                     <img class="img__micro" src="img/swarmai.jpg" />
+                    <div class="img__description_layer">
+                        <h3 class="mod">AI</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 id="skills" class="title col-md-12">Skills</h1>
+            <div class="img-skills">
+                <img src="img/html-5-logo.png" alt="html5">
+                <img src="img/css-3.png" alt="css3">
+                <img src="img/icon.png" alt="js">
+                <img src="img/java.png" alt="java">
+                <img src="img/icon(1).png" alt="pyhton">
+                <img src="img/mysql.png" alt="sql">
             </div>
         </div>
         <div class="row">
@@ -142,6 +185,16 @@
         </div>
         <div class="row">
             <h1 id="contact" class="title col-md-12">Contact me</h1>
+            <div class="number col-md-2">
+                <img src="img/wp-logo.png" alt="wp_logo.png" width="25px" height="25px">
+                <p class="info">(+57)312 583 9087</p>
+                <img src="img/mail.png" alt="mail.png" width="25px" height="25px">
+                <p class="info">ra.angel10@uniandes.edu.co</p>
+                <img src="img/tweet.png" alt="tweet.png" width="25px" height="25px">
+                <a href="https://twitter.com/Ricardo86913110">
+                    <p class="info">Twitter</p>
+                </a>
+            </div>
             <div class="col-md-5 contact-form">
                 <div class="form-area">
                     <form role="form">
@@ -164,7 +217,7 @@
                             <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
                         </div>
 
-                        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right " onclick="sendMail(); return false">Submit Form</button>
                     </form>
                 </div>
             </div>
