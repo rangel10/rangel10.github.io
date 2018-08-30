@@ -24,7 +24,7 @@ $(document).ready(() => {
         if (t.join('') == '240000') t = [0, 0, 0, 0, 0, 0];
         $('#clock >div').each((i, v) => {
             $(v).find('.dot').each((index, dot) => {
-                $(dot).css('background-color', x[t[i]][index] == 0 ? '#fff' : 'rgba(10, ' + (i + 1) * 42 + ', 255,' + (index + 1) * 0.25 + ')');
+                $(dot).css('background-color', x[t[i]][index] == 0 ? '#fff' : 'rgba(5, ' + (i + 1) * 0.5 + ', 5,' + (index + 1) * 0.25 + ')');
             });
         });
 

@@ -64,11 +64,11 @@ h3 {
 
 .dot {
     border: solid 1px #aaa;
-    height: 50px;
-    width: 50px;
+    height: 125px;
+    width: 125px;
     margin: 3px;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.25s;
 }
 
 /* relevant styles */
@@ -181,11 +181,17 @@ h3 {
     margin-left: 10px;
 }
 
-number, mail {
+.number, .mail {
     display: inline-block;
 }
 
-img-skills {
+.img-skills {
     margin: 2rem;
     display: inline-block;
 }
+
+.img-skills img:hover {
+    transform: scaleY(1.2);
+    transform: scaleX(1.2);
+}
+
