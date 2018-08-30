@@ -1,13 +1,16 @@
 body {
-    margin: 2rem auto;
+    margin: 0;
     font-size: 18px;
     background-color: #EEEEEF !important;
 }
 
 .barra {
     padding-bottom: 1rem;
+    z-index: 10;
 }
-
+.barra > h3 {
+    color: #EEE;
+}
 .profile {
     display: inline-block;
     vertical-align: top;
